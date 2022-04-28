@@ -13,7 +13,7 @@
 
             <ul class="nav-list">
                 <li class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"><a href="/characters">CHARACTERS</a></li>
-                <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"><a href="/comics">COMICS</a></li>
+                <li class="{{ Route::currentRouteName() === 'comics' || Route::currentRouteName() === 'comic' ? 'active' : '' }}"><a href="/comics">COMICS</a></li>
                 <li class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}"><a href="/movies">MOVIES</a></li>
                 <li class=""><a href="#">TV</a></li>
                 <li class=""><a href="#">GAMES</a></li>

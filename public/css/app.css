@@ -38,7 +38,12 @@ header nav .nav-list {
 }
 header nav .nav-list li {
   margin: 0 1rem;
+  height: 100%;
   flex-grow: 1;
+  border-bottom: 3px solid transparent;
+}
+header nav .nav-list li a {
+  text-decoration: none;
 }
 
 .container-jumbo {
@@ -47,6 +52,10 @@ header nav .nav-list li {
 }
 .container-jumbo img {
   width: 100%;
+}
+
+.nav-list li.active {
+  border-color: #0282f9;
 }
 
 #main-content {
