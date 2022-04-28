@@ -1,7 +1,7 @@
 @extends('templates/main')
+{{-- @dd(url()->current()) --}}
 
 @section('title', $title)
-
 @section('content')
 <section id="comic-container">
     <div class="blue-band">
