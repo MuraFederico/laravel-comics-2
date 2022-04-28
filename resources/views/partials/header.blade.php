@@ -8,13 +8,13 @@
     <nav>
         <div class="container">
             <div class="logo-container">
-                <a href="/"><img src="./images/dc-logo.png" alt=""></a>
+                <a href="/"><img src="/images/dc-logo.png" alt=""></a>
             </div>
 
             <ul class="nav-list">
-                <li class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"><a href="characters">CHARACTERS</a></li>
-                <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"><a href="comics">COMICS</a></li>
-                <li class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}"><a href="movies">MOVIES</a></li>
+                <li class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"><a href="/characters">CHARACTERS</a></li>
+                <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"><a href="/comics">COMICS</a></li>
+                <li class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}"><a href="/movies">MOVIES</a></li>
                 <li class=""><a href="#">TV</a></li>
                 <li class=""><a href="#">GAMES</a></li>
                 <li class=""><a href="#">COLLECTIBLES</a></li>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="container-jumbo">
-            <img src="./images/jumbotron.jpg" alt="">
+            <img src="/images/jumbotron.jpg" alt="">
         </div>
     </nav>
 </header>

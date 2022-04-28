@@ -1,17 +1,17 @@
-.blue-band {
-    padding: .3rem;
-    background-color: #0282f9;
-    color: white;
-    .container {
-        display: flex;
-        justify-content: flex-end;
-    }
-    h4 {
-        margin-left: 6rem;
-        font-size: 12px;
-    }
-}
 header {
+    .blue-band {
+        padding: .3rem;
+        background-color: #0282f9;
+        color: white;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        h4 {
+            margin-left: 6rem;
+            font-size: 12px;
+        }
+    }
 
     nav {
         .container {

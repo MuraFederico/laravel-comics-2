@@ -20,7 +20,7 @@
                 </ul>
             </div>
             <div class="container-logo">
-                <img src="images/dc-logo-bg.png" alt="">
+                <img src="/images/dc-logo-bg.png" alt="">
             </div>
         </div>
     </section>

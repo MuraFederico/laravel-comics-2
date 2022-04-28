@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-})->name('home');;
+})->name('home');
 
 Route::get('/characters', function () {
     return view('characters');
@@ -28,8 +28,15 @@ Route::get('/comics', function () {
     ];
 
     return view('comics', $data);
-})->name('comics');;
+})->name('comics');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    $comic = collect($comics)->firstWhere('id', $id);
+    // @dd($comic);
+    return view('comic', $comic);
+})->name('comic');
 
 Route::get('/movies', function () {
     return view('movies');
-})->name('movies');;
+})->name('movies');
