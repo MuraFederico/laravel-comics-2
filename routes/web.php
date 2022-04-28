@@ -33,8 +33,13 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
     $comic = collect($comics)->firstWhere('id', $id);
-    // @dd($comic);
-    return view('comic', $comic);
+    if (!$comic) {
+       abort(404);
+    }else {
+
+        return view('comic', $comic);
+    }
+
 })->name('comic');
 
 Route::get('/movies', function () {
